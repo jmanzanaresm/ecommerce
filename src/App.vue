@@ -23,9 +23,15 @@ export default {
 };
 </script>
 <style lang="sass">
+html
+  background: #fafafa
+
 main
   padding: 0 100px
 
 a
   text-decoration: none
+
+ul
+  list-style: none
 </style>
