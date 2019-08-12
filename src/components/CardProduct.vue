@@ -1,50 +1,38 @@
 <template>
-    <header>
-        <nav>
-            <v-layout justify-end fluid>
-                <v-flex xs12 md3 lg-4>
-                    <ul class="access-nav">
-                        <v-flex xs4 md4 lg4>
-                            <li class="access-nav__item"><a href="#">Login</a></li>
-                        </v-flex>
-                        <v-flex xs4 md4 lg4>
-                            <li class="access-nav__item"><a href="#">Register</a></li>
-                        </v-flex>
-                        <v-flex xs4 md4 lg4>
-                            <li class="access-nav__item"><a href="#">Cart</a></li>
-                        </v-flex>
-                    </ul>
-                </v-flex>
-            </v-layout>
-        </nav>
-    </header>
+    <v-card
+      class="mx-auto"
+      flat="flat"
+      elevation="8"
+      width="100%"
+    >
+      <v-img
+        class="white--text"
+        height="200px"
+        src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+      >
+      </v-img>
+    <v-card-title class="align-end fill-height subtitle-1">Lorem, ipsum dolor sit amet</v-card-title>
+    <v-layout justify-space-between align-center>
+        <v-flex lg6>
+            <v-card-text class="display-1">35% <span class="subtitle-1">off</span></v-card-text>
+        </v-flex>
+        <v-flex lg6>
+            <v-card-text class="title pb-0">L. 1,250.00</v-card-text>
+            <v-card-text class="middle-line subtitle-1 pt-0 mt-0">L. 2,750.00</v-card-text>
+        </v-flex>
+    </v-layout>
+    </v-card>
 </template>
 
 <script>
 
+export default {
+    name: 'CardProduct'
+}
 </script>
 
 <style lang="sass" scoped>
-header
-    height: 4rem
-    padding: 0 100px
-    width: 100%
-    nav
-        background: #fafafa
-        height: 100%
-        width: 100%
-
-.access-nav
-    display: flex
-    flex-flow: row nowrap
-    justify-content: flex-end
-    padding-bottom: 2rem
-    .access-nav__item
-        display: flex
-        flex-flow: row nowrap
-        justify-content: flex-end
-
-
-
+.middle-line
+    text-decoration-line: line-through
 </style>
 
