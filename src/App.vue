@@ -20,14 +20,21 @@ export default {
 </script>
 <style lang="sass">
 html
-  background: #fafafa
+  background: #ffffff
 
 main
-  padding: 0 100px
+  padding: 3rem 5rem 0 5rem
 
 a
+  color: #ffffff
   text-decoration: none
 
 ul
   list-style: none
+
+.v-input__slot
+  &::before
+    display: none
+  &::after
+    display: none
 </style>

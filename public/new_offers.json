@@ -1,0 +1,38 @@
+[
+    {
+        "product_name": "14-Inch wide-view Full-HD nano-edge bezel touch display in 13.3 chassis",
+        "thumbnail_image": "https://img-us1.asus.com/A/show/AW000706/2018/0125/AM0000001/201801AM250000001_15168459708835440006443.jpg",
+        "image":"https://img-us1.asus.com/A/show/AW000706/2018/0125/AM0000001/201801AM250000001_15168459708835440006443.jpg",
+        "real_price": 2500,
+        "discount_price": 1750,
+        "company": "ASUS",
+        "description": "lorem Exercitation nulla incididunt labore proident quis adipisicing ad nostrud Lorem id quis minim sit. Culpa sit cillum magna ullamco consequat sit minim quis reprehenderit ad et exercitation dolor. Quis exercitation consequat sunt ad culpa ea commodo enim elit. Reprehenderit id adipisicing do et laboris consequat dolor tempor cupidatat ex et dolore ea. Quis minim in minim eu."
+    },
+    {
+        "product_name": "Fashion 3way Mini Korean Cute Sling Bag A018",
+        "thumbnail_image": "https://cf.shopee.ph/file/fa89da4bc09f2301595bd475c5c6b675",
+        "image":"https://cf.shopee.ph/file/fa89da4bc09f2301595bd475c5c6b675",
+        "real_price": 70,
+        "discount_price": 65,
+        "company": "Korea Rolex",
+        "description": "lorem Exercitation nulla incididunt labore proident quis adipisicing ad nostrud Lorem id quis minim sit. Culpa sit cillum magna ullamco consequat sit minim quis reprehenderit ad et exercitation dolor. Quis exercitation consequat sunt ad culpa ea commodo enim elit. Reprehenderit id adipisicing do et laboris consequat dolor tempor cupidatat ex et dolore ea. Quis minim in minim eu."
+    },
+    {
+        "product_name": "14-Inch wide-view Full-HD nano-edge bezel touch display in 13.3 chassis",
+        "thumbnail_image": "https://www.sanborns.com.mx/imagenes-sanborns-ii/1200/889349917428.jpg",
+        "image":"https://img-us1.asus.com/A/show/AW000706/2018/0125/AM0000001/201801AM250000001_15168459708835440006443.jpg",
+        "real_price": 2500,
+        "discount_price": 1750,
+        "company": "ASUS",
+        "description": "lorem Reprehenderit commodo magna excepteur est ex. Sit in occaecat aliqua in sint sit fugiat. Ipsum velit enim irure minim nisi pariatur sunt ea. Veniam dolore deserunt amet id minim quis pariatur do aliqua id. Cupidatat irure aliqua anim mollit aute incididunt nostrud. Veniam sit esse quis labore incididunt tempor pariatur aute voluptate eiusmod exercitation elit aute."
+    },
+    {
+        "product_name": "grinder PUNCH - Mens Non Prescription Clear Lens Glasses",
+        "thumbnail_image": "https://images-na.ssl-images-amazon.com/images/I/71z4g0oT9pL._UX522_.jpg",
+        "image":"https://images-na.ssl-images-amazon.com/images/I/71z4g0oT9pL._UX522_.jpg",
+        "real_price": 77,
+        "discount_price": 43,
+        "company": "Korea Rolex",
+        "description": "lorem Exercitation nulla incididunt labore proident quis adipisicing ad nostrud Lorem id quis minim sit. Culpa sit cillum magna ullamco consequat sit minim quis reprehenderit ad et exercitation dolor. Quis exercitation consequat sunt ad culpa ea commodo enim elit. Reprehenderit id adipisicing do et laboris consequat dolor tempor cupidatat ex et dolore ea. Quis minim in minim eu."
+    }
+]
