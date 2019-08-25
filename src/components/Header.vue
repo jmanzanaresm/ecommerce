@@ -1,12 +1,25 @@
 <template>
     <header>
         <nav class="transparent">
-            <v-layout justify-end fluid>
+            <v-layout justify-space-between fluid>
+                <v-flex xs12 md4 lg4>
+                    <ul class="d-flex justify-space-between pl-0">
+                        <router-link to="/">
+                            <li><strong>Home</strong></li>
+                        </router-link>
+                        <router-link to="search">
+                            <li><strong>Electronics</strong></li>
+                        </router-link>
+                        <router-link to="moda">
+                            <li><strong>Hot</strong></li>
+                        </router-link>
+                    </ul>
+                </v-flex>
                 <v-flex xs12 md3 lg-4>
                     <ul class="access-nav">
                         <v-flex xs4 md4 lg4>
                             <v-dialog
-                                v-model="dialog"
+                                v-model="loginModal"
                                 width="500"
                                 >
                                 <template v-slot:activator="{ on }">
@@ -30,11 +43,11 @@
 
                                     <v-card-text>
                                         <v-text-field label="Email" placeholder="john@example.com" outlined></v-text-field>
-                                        <v-text-field label="Password" outlined></v-text-field>
+                                        <v-text-field label="Password" type="password" outlined></v-text-field>
                                         <v-btn
                                             primary
                                             color="primary"
-                                            @click="dialog = false"
+                                            @click="loginModal = false"
                                         >
                                             Login
                                         </v-btn>
@@ -42,7 +55,7 @@
                                             primary
                                             text
                                             color="primary"
-                                            @click="dialog = false"
+                                            @click="loginModal = false"
                                         >
                                             Cancel
                                         </v-btn>
@@ -52,7 +65,7 @@
                         </v-flex>
                         <v-flex xs4 md4 lg4>
                             <v-dialog
-                                v-model="dialog"
+                                v-model="registerModal"
                                 width="500"
                                 >
                                 <template v-slot:activator="{ on }">
@@ -78,10 +91,17 @@
                                         <v-text-field placeholder="Name" outlined></v-text-field>
                                         <v-text-field placeholder="Email" outlined></v-text-field>
                                         <v-text-field placeholder="Password" type="password" outlined></v-text-field>
+                                        <v-radio-group class="d-flex" v-model="radioGroup">
+                                            <label>What kind of user you are?</label>
+                                            <div class="d-flex justify-center">
+                                                <v-radio label="Buyer" value="1"></v-radio>
+                                                <v-radio class="align-self-center" label="Seller" value="2"></v-radio>
+                                            </div>
+                                        </v-radio-group>
                                         <v-btn
                                             primary
                                             color="primary"
-                                            @click="dialog = false"
+                                            @click="registerModal = false"
                                         >
                                             Create
                                         </v-btn>
@@ -89,7 +109,7 @@
                                             primary
                                             text
                                             color="primary"
-                                            @click="dialog = false"
+                                            @click="registerModal = false"
                                         >
                                             Cancel
                                         </v-btn>
@@ -116,7 +136,8 @@ export default {
     name: 'Header',
     data: () => {
         return {
-            dialog: false
+            loginModal: false,
+            registerModal: false
         }
     }
 }
@@ -136,6 +157,18 @@ header
         height: 100%
         padding-top: 0.5rem
         width: 100%
+        &::before
+            display: block
+            border-radius: 0 0 50px 50px
+            background: #fafafa
+            content: ""
+            opacity: 0.6
+            height: 40px
+            width: 700px
+            position: absolute
+            top: 0
+            left: -100px
+            z-index: -1
 
 .access-nav
     display: flex
@@ -158,5 +191,6 @@ header
         height: 400px
         width: 400px
         z-index: -1
+
 </style>
 

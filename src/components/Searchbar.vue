@@ -39,7 +39,7 @@ export default {
     name: 'Searchbar',
     data: () => {
       return {
-        items: ['item1', 'item2']
+        items: ['Electronic', 'Books', 'Baby', 'Beauty']
       }
     }
 }

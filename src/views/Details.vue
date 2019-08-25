@@ -5,7 +5,7 @@
         <v-container grid-list-xl>
             <v-layout >
                 <v-flex lg6>
-                    <v-card flat>
+                    <v-card>
                         <v-img src="https://home.ripley.com.pe/Attachment/WOP_5/2004219013583/2004219013583-2.jpg"></v-img>
                     </v-card>
                     <div class="d-flex justify-space-between">

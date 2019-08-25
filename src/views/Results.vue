@@ -2,14 +2,30 @@
     <main>
         <v-container>
             <Searchbar />
-            <v-btn class="mt-3" outlined>Filters</v-btn>
         </v-container>
 
         <v-container class="pb-4 mb-4" grid-list-xl>
-            <h4 class="mt-6 secondary--text">Results for "Laptop"</h4>
-            <v-layout wrap>
-                <v-flex v-for="(product, index) in results" :key="index" lg4>
-                    <CardProduct :product="product"/>
+            <v-layout nowrap>
+                <v-flex lg2>
+                    <h4 class="secondary--text">Filters</h4>
+                    <v-divider></v-divider>
+                    <ul>
+                        <li class="pt-4"><h5>Brand</h5></li>
+                        <li>Acer</li>
+                        <li>Asus</li>
+                        <li>DELL</li>
+                        <li class="pt-4"><h5>RAM Capacity</h5></li>
+                        <li>4GB</li>
+                        <li>6GB</li>
+                    </ul>
+                </v-flex>
+                <v-flex class="offset-lg1" lg9>
+                    <h4 class="secondary--text">Results for "Laptop"</h4>
+                    <v-layout wrap>
+                        <v-flex v-for="(product, index) in results" :key="index" lg4>
+                            <CardProduct :product="product"/>
+                        </v-flex>
+                    </v-layout>
                 </v-flex>
             </v-layout>
         </v-container>
@@ -29,7 +45,10 @@ export default {
 
     data: () => {
         return {
-            results: []
+            results: [],
+            filters: {
+                showPanel: false,
+            }
         }
     },
 
