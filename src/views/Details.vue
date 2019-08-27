@@ -21,13 +21,25 @@
                     <v-divider class="my-3" />
                     <p class="description">Proident Lorem reprehenderit id ipsum adipisicing pariatur dolore cupidatat sunt exercitation exercitation. Ad fugiat ut minim aliquip Lorem consequat excepteur velit elit. Nulla ea adipisicing Lorem et incididunt ut officia. Ipsum eu id id ea aute veniam pariatur qui esse irure nostrud. Excepteur consectetur aliquip duis eiusmod nisi sunt voluptate in ea cillum anim. Dolor laboris proident deserunt ullamco Lorem in esse dolore dolore. Aliquip et incididunt minim et duis sint ad.</p>
                     <v-divider class="my-3" />
-                    <v-layout>
-                        <v-flex lg2>
-                            <v-text-field
-                                label="Quantity"
-                                value="1"
-                                outlined
+                    <v-layout align-center>
+                        <v-flex lg4>
+                            <v-btn-toggle
+                                class="d-flex align-center"
+                                rounded
+                                >
+                                <v-btn @click="decreaseItems">
+                                    <v-icon>mdi-minus</v-icon>
+                                </v-btn>
+                                <v-text-field
+                                    label="Quantity"
+                                    hide-details
+                                    :value="quantityItems"
+                                    outlined
                             ></v-text-field>
+                                <v-btn @click="increaseItems">
+                                    <v-icon>mdi-plus</v-icon>
+                                </v-btn>
+                                </v-btn-toggle>
                         </v-flex>
                         <v-flex lg4>
                             <v-btn x-large color="primary">Buy</v-btn>
@@ -47,6 +59,23 @@ export default {
     name: 'Details',
     components: {
         Searchbar
+    },
+    data: () => {
+        return {
+            quantityItems: 1
+        }
+    },
+
+    methods: {
+        increaseItems() {
+            this.quantityItems += 1;
+        },
+
+        decreaseItems() {
+            if (this.quantityItems > 1) {
+                this.quantityItems -= 1
+            }
+        }
     }
 }
 </script>
