@@ -91,12 +91,10 @@
                                         <v-text-field placeholder="Name" outlined></v-text-field>
                                         <v-text-field placeholder="Email" outlined></v-text-field>
                                         <v-text-field placeholder="Password" type="password" outlined></v-text-field>
-                                        <v-radio-group class="d-flex">
+                                        <v-radio-group>
                                             <label>What kind of user you are?</label>
-                                            <div class="d-flex justify-center">
-                                                <v-radio label="Buyer" value="1"></v-radio>
-                                                <v-radio class="align-self-center" label="Seller" value="2"></v-radio>
-                                            </div>
+                                            <v-radio label="Buyer" value="1"></v-radio>
+                                            <v-radio label="Seller" value="2"></v-radio>
                                         </v-radio-group>
                                         <v-btn
                                             primary
@@ -119,7 +117,7 @@
                         </v-flex>
                         <v-flex xs4 md4 lg4>
                             <li class="access-nav__item">
-                                <v-btn class="pt-0" fab text small>
+                                <v-btn class="ma-0" color="white" fab text small>
                                     <v-icon>mdi-cart</v-icon>
                                 </v-btn>
                             </li>

@@ -9,14 +9,14 @@
                 <v-flex lg2>
                     <h4 class="secondary--text">Filters</h4>
                     <v-divider></v-divider>
-                    <ul>
-                        <li class="pt-4"><h5>Brand</h5></li>
-                        <li>Acer</li>
-                        <li>Asus</li>
-                        <li>DELL</li>
-                        <li class="pt-4"><h5>RAM Capacity</h5></li>
-                        <li>4GB</li>
-                        <li>6GB</li>
+                    <ul class="filters-list">
+                        <li class="pt-4 grey--text text--darken-2"><h5>Brand</h5></li>
+                        <li class="filters-list__item">Acer</li>
+                        <li class="filters-list__item">Asus</li>
+                        <li class="filters-list__item">DELL</li>
+                        <li class="pt-4 grey--text text--darken-2"><h5>RAM Capacity</h5></li>
+                        <li class="filters-list__item">4GB</li>
+                        <li class="filters-list__item">6GB</li>
                     </ul>
                 </v-flex>
                 <v-flex class="offset-lg1" lg9>
@@ -66,3 +66,11 @@ export default {
     }
 }
 </script>
+
+<style lang="sass">
+.filters-list__item
+    transition: 0.5s ease
+    &:hover
+        color: #0091EA
+        cursor: pointer
+</style>

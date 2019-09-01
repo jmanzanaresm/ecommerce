@@ -11,7 +11,7 @@
             :items="items"
             class="search__select mt-0 pt-0"
             width="40px"
-            label="Departament"
+            placeholder="Departament"
             hide-details
             flat
           ></v-select>
