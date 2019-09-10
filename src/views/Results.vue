@@ -22,9 +22,7 @@
                 <v-flex class="offset-lg1" lg9>
                     <h4 class="secondary--text">Results for "Laptop"</h4>
                     <v-layout wrap>
-                        <v-flex v-for="(product, index) in results" :key="index" lg4>
-                            <CardProduct :product="product"/>
-                        </v-flex>
+                        <CardProductListMode v-for="(product, index) in results" :key="index" :product="product"/>
                     </v-layout>
                 </v-flex>
             </v-layout>
@@ -34,13 +32,13 @@
 <script>
 import Header from '../components/Header'
 import Searchbar from '../components/Searchbar'
-import CardProduct from '../components/CardProduct'
+import CardProductListMode from '../components/CardProductListMode'
 
 export default {
     name: "Results",
     components: {
         Searchbar,
-        CardProduct
+        CardProductListMode
     },
 
     data: () => {
