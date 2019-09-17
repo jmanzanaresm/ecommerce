@@ -20,9 +20,11 @@
                     </ul>
                 </v-flex>
                 <v-flex class="offset-lg1" lg9>
-                    <h4 class="secondary--text">Results for "Laptop"</h4>
-                    <v-layout wrap>
-                        <CardProductListMode v-for="(product, index) in results" :key="index" :product="product"/>
+                    <h4 class="secondary--text pb-3">Results for "Laptop"</h4>
+                    <v-layout nowrap>
+                        <v-card>
+                            <CardProductListMode v-for="(product, index) in results" :key="index" :product="product" :index="index"/>
+                        </v-card>
                     </v-layout>
                 </v-flex>
             </v-layout>

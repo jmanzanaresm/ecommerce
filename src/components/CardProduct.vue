@@ -14,7 +14,7 @@
         :src="product.thumbnail_image"
       >
       </v-img>
-    <v-card-title class="align-end fill-height subtitle-1">{{ product.product_name }}</v-card-title>
+    <v-card-title class="align-end fill-height product-name">{{ product.product_name }}</v-card-title>
     <v-layout justify-space-between align-center>
         <v-flex lg6>
             <v-card-text class="display-1">-{{(product.discount_price/product.real_price*100).toFixed(0)}}%</v-card-text>
@@ -38,11 +38,5 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-.middle-line
-    text-decoration-line: line-through
-
-.subtitle-1
-  max-height: 75px
-  overflow: hidden
 </style>
 

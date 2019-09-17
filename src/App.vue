@@ -37,4 +37,14 @@ ul
     display: none
   &::after
     display: none
+
+.middle-line
+  text-decoration-line: line-through
+
+.product-name
+  max-height: 75px
+  overflow: hidden
+
+.product-price
+  font-size: 14pt 
 </style>
