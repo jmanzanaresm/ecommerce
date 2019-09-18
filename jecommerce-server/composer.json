@@ -1,0 +1,10 @@
+{
+    "name": "jessica/jecommerce-server",
+    "description": "Server for Jecommerce webapp",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "kreait/firebase-php": "^4.32"
+    }
+}
