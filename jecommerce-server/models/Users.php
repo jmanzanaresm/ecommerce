@@ -11,7 +11,7 @@ class Users {
     }
 
     public function list() {
-        return $this->db->getReference('users')->getValue();
+        return $this->db->getStorage();
     }
 
     public function create(string $name, string $email, string $password) {
@@ -22,5 +22,9 @@ class Users {
             'password' => $password
             ]);
 
+    }
+
+    public function retrieve($id) {
+        return $this->db->getReference('users')->getSnapshot();
     }
 }
